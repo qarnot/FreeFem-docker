@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [[ ${INSTANCE_ID} = 0 ]]
+then
+	echo "Node 0: nb lines = `wc -l /job/texte.txt | cut -d ' ' -f 1`"
+fi
+
+if [[ ${INSTANCE_ID} = 1 ]]
+then
+	echo "Node 1: nb words = `wc -w /job/texte.txt | cut -d ' ' -f 1`"
+fi
+
+if [[ ${INSTANCE_ID} = 2 ]]
+then
+	echo "Node 2: nb characters = `wc -m /job/texte.txt | cut -d ' ' -f 1`"
+fi
