@@ -22,7 +22,7 @@ task.constants["DOCKER_REPO"] = "qarnotlab/freefem"
 task.constants["DOCKER_TAG"] = "latest"
 
 # Configure parameter to change the step depth (adding "-step PARAMETER_BETWEEN_0.1_AND_0.9_HERE")
-task.constants["DOCKER_CMD"] = "/usr/freefem/bin/ff-mpirun -n 4 ./navierstokes.edp -v 0 -step 0.8"
+task.constants["DOCKER_CMD"] = "/usr/freefem/bin/ff-mpirun -n 1 ./navierstokes.edp -v 0 -step 0.8"
 
 task.submit()
 
